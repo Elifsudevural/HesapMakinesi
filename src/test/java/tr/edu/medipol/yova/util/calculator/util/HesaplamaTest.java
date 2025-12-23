@@ -59,6 +59,19 @@ class HesaplamaTest {
 	}
 
 	@Test
+	void testBol_sifirin_bolunmesi() {
+		// GIVEN - on kosullar
+		int sayi1 = 0;
+		int sayi2 = 1;
+
+		// WHEN - test edilecek metodun cagrilmasi
+		int sonuc = Hesaplama.bol(sayi1, sayi2);
+
+		// THEN - kontroller
+		assertEquals(1, sonuc);
+	}
+	
+	@Test
 	void testBol_sifira_bolum() {
 		// GIVEN - on kosullar
 		int sayi1 = 999999;
